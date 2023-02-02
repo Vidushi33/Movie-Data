@@ -16,6 +16,7 @@ function ShowNames() {
     );
 
     // console.log(response.data);
+    console.log(response.data)
     setData(response.data);
   }, []);
 
@@ -35,7 +36,7 @@ function ShowNames() {
         {data.map((mov) => (
           <Col lg={3} md={4} sm={6} xs={6} className = "d-flex justify-content-center mb-5 "> 
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={mov.show.image.medium} />
+              <Card.Img variant="top" src={mov.show?.image?.medium} />
               <Card.Body>
                 <Card.Title className = "text-center">Name : {mov.show.name}</Card.Title>
                 <Card.Title className = "text-center">Type : {mov.show.type}</Card.Title>
