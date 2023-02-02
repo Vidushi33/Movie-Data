@@ -138,7 +138,7 @@ function Summary() {
       <Row className="d-flex justify-content-center align-content-center  w-75 mx-auto" style={{position:"relative",top:"50%",transform: 'translateY(-50%)'}}>
         <Col >
           <Card className = "d-flex flex-row okay"  style={{height: 'auto', width: 'auto', border:"10px solid black"}}>
-            <Card.Img variant="top" src={movDetails.show.image.medium} className = " p-2" style={{minHeight: '100%', width: '50rem'}}/>
+            <Card.Img variant="top" src={movDetails.show?.image?.medium} className = " p-2" style={{minHeight: '100%', width: '50rem'}}/>
             <Card.Body>
               <Card.Title style = {{fontWeight:"bold" , textAlign:"center" , fontSize: "30px"}}>{movDetails.show.name}</Card.Title>
               <Card.Text className = "mt-4 w-100 mx-auto" dangerouslySetInnerHTML={{__html: `${movDetails.show.summary}`}}>
